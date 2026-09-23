@@ -26,7 +26,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{margin:0;overflow-x:clip;font:400 clamp(1rem,.95rem + .25vw,1.125rem)/1.6 var(--body);color:var(--plum);background:var(--petal)}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--marigold);outline-offset:3px;box-shadow:0 0 0 6px var(--plum)}
 .wrap{max-width:1180px;margin:auto;padding:0 var(--pad)}
@@ -47,11 +47,13 @@ h1 span{display:block}h1 span+span{margin-left:.55em}
 .role{font:400 clamp(1.25rem,3.6vw,2rem)/1.15 var(--display);margin:1.25rem 0 .5rem}
 .tag{font-size:clamp(1.05rem,2.4vw,1.35rem);font-weight:600;max-width:30ch;margin:0 0 1.75rem}
 .cta{display:flex;flex-wrap:wrap;gap:1rem;margin:0}
-.art{position:relative;width:100%;max-width:400px;margin:0 auto}
-.art::before{content:"";position:absolute;inset:8% -10% -6% 10%;background:var(--marigold);border-radius:50%}
-.arch{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;border:4px solid var(--plum);border-radius:999px 999px 24px 24px;box-shadow:var(--hard)}
-.burst{position:absolute;right:-3%;bottom:10%;width:8.5rem;aspect-ratio:1;border-radius:50%;background:var(--marigold);border:3px solid var(--plum);display:grid;place-items:center;text-align:center;padding:.6rem;font-weight:800;font-size:.95rem;line-height:1.15;transform:rotate(-12deg);box-shadow:var(--hard)}
-.spin{position:absolute;top:-5%;left:-6%;width:7.5rem;background:var(--blush);border:3px solid var(--plum);border-radius:50%;color:var(--plum)}
+.art{position:relative;width:100%;max-width:460px;aspect-ratio:1;margin:0 auto}
+.art::before{content:"";position:absolute;inset:12% 0 0 14%;background:var(--marigold);border-radius:50%}
+.ph{position:absolute;object-fit:cover;border:4px solid var(--plum);border-radius:26px;box-shadow:var(--hard)}
+.ph1{top:0;left:0;width:66%;aspect-ratio:1;object-position:50% 35%;transform:rotate(-4deg)}
+.ph2{right:0;bottom:0;width:56%;aspect-ratio:4/5;object-position:50% 100%;transform:rotate(5deg)}
+.burst{position:absolute;right:-2%;top:2%;z-index:3;width:8.5rem;aspect-ratio:1;border-radius:50%;background:var(--marigold);border:3px solid var(--plum);display:grid;place-items:center;text-align:center;padding:.6rem;font-weight:800;font-size:.95rem;line-height:1.15;transform:rotate(-12deg);box-shadow:var(--hard)}
+.spin{position:absolute;bottom:1%;left:2%;z-index:3;width:7.5rem;background:var(--blush);border:3px solid var(--plum);border-radius:50%;color:var(--plum)}
 .spin text{font:800 11px var(--body)}
 /* ticker */
 .ticker{background:var(--rose);color:#fff;border-block:3px solid var(--plum);overflow:hidden}
@@ -127,7 +129,7 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 .js .rv.in{opacity:1;transform:none}
 .hero-copy>*{animation:rise .7s both}
 .hero-copy>:nth-child(2){animation-delay:.08s}.hero-copy>:nth-child(3){animation-delay:.16s}.hero-copy>:nth-child(4){animation-delay:.24s}.hero-copy>:nth-child(5){animation-delay:.32s}.hero-copy>:nth-child(6){animation-delay:.4s}
-.arch{animation:pop .8s .2s both cubic-bezier(.3,1.4,.5,1)}
+.ph{animation:pop .8s .2s both cubic-bezier(.3,1.4,.5,1)}
 .spin{animation:spin 22s linear infinite}
 .burst:hover{animation:wig .5s}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}}
@@ -165,7 +167,8 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
   </div>
  </div>
  <div class="art">
-  <img class="arch" src="images/red-beaded-bag-flatlay.webp" width="960" height="1280" fetchpriority="high" alt="Flat lay of a red beaded chain-strap bag, pink headphones, a scrunchie and bougainvillea petals beside red sneakers">
+  <img class="ph ph1" src="images/red-beaded-bag-flatlay.webp" width="960" height="1280" fetchpriority="high" alt="Flat lay of a red beaded chain-strap bag, pink headphones, a scrunchie and bougainvillea petals beside red sneakers">
+  <img class="ph ph2" src="images/swadha-tin-terracotta-burner.webp" width="960" height="1280" alt="Swadha herbal blend tin by Anant World beside a terracotta lantern-style burner and an open clay bowl, with rose petals on gold silk">
   <svg class="spin" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="c" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text fill="currentColor"><textPath href="#c" textLength="272" lengthAdjust="spacing">Instagram strategy • Reels • Community •</textPath></text></svg>
   <div class="burst">Zero budget.<br>No paid ads.</div>
  </div>
