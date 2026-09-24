@@ -62,9 +62,9 @@ h1 span{display:block}h1 span+span{margin-left:.55em}
 .track ul{display:flex;list-style:none;margin:0;padding:.85rem 0}
 .track li{font:400 1.35rem var(--display);white-space:nowrap;padding-left:1.5rem}
 .track li::after{content:"✦";color:var(--marigold);margin-left:1.5rem}
-.who{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
-.who .pill{margin:0}
-.avatar{width:5.25rem;height:5.25rem;border-radius:50%;object-fit:cover;background:var(--blush);border:3px solid var(--plum);box-shadow:3px 3px 0 var(--plum)}
+.who{position:relative;width:max-content;max-width:100%;margin-bottom:1.75rem}
+.avatar{width:clamp(9rem,26vw,12rem);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 30%;background:var(--blush);border:4px solid var(--plum);box-shadow:var(--hard)}
+.who .pill{position:absolute;left:62%;bottom:.4rem;margin:0;white-space:nowrap;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--marigold)}
 .bio{margin-top:2.25rem;max-width:56ch}
 .bio p{margin:0 0 .9rem}
 /* reels */
@@ -160,7 +160,7 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 <body>
 <header class="hero"><div class="wrap hero-in">
  <div class="hero-copy">
-  <div class="who"><img class="avatar" src="images/preet-kaur-avatar.webp" width="240" height="240" alt="Preet Kaur, smiling and looking to the side, wearing glasses"><p class="pill">New Delhi, India</p></div>
+  <div class="who"><img class="avatar" src="images/preet-kaur-profile.jpg" width="2316" height="3088" fetchpriority="high" decoding="async" alt="Preet Kaur with a slight smile, wearing large glasses, with long curly hair, in warm orange light against a brick wall"><p class="pill">New Delhi, India</p></div>
   <h1><span>Preet</span><span>Kaur</span></h1>
   <p class="role">Social Media Manager &amp; Content Creator</p>
   <p class="tag">Scripts, shoots, edits, posts. Often all for the same brand.</p>
