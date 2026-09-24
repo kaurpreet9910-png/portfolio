@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/images/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23D6135B'/%3E%3Ctext x='32' y='46' font-size='40' font-family='Arial Black,sans-serif' text-anchor='middle' fill='%23FFB627'%3EP%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Preet Kaur","jobTitle":"Social Media Manager & Content Creator","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"},"sameAs":["https://instagram.com/kalaakritico","https://instagram.com/anantworld_official"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Preet Kaur","jobTitle":"Social Media Manager & Content Creator","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"},"sameAs":["https://www.instagram.com/rogue.romantic_/","https://instagram.com/kalaakritico","https://instagram.com/anantworld_official"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
@@ -35,7 +35,7 @@ h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1;margin:0}
 h2{font-size:clamp(2.25rem,7vw,4.5rem);max-width:16ch}
 h3{font-size:clamp(1.4rem,3.5vw,1.9rem)}
 .lead{max-width:56ch;margin:1rem 0 0}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.5rem;border:3px solid var(--plum);border-radius:99px;font-weight:800;text-decoration:none;background:var(--marigold);color:var(--plum);box-shadow:var(--hard);transition:transform .15s,box-shadow .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.5rem 1.5rem;text-align:center;line-height:1.2;border:3px solid var(--plum);border-radius:99px;font-weight:800;text-decoration:none;background:var(--marigold);color:var(--plum);box-shadow:var(--hard);transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translate(-2px,-2px) rotate(-1deg);box-shadow:7px 7px 0 var(--plum)}
 .btn.w{background:#fff}.btn.r{background:var(--rose);color:#fff}
 .pill{display:inline-block;background:var(--plum);color:var(--petal);font-weight:800;padding:.35rem 1rem;border-radius:99px;font-size:.95rem;margin:0 0 1rem}
@@ -71,8 +71,10 @@ h1 span{display:block}h1 span+span{margin-left:.55em}
 .reels-sec{background:var(--plum);color:var(--petal);--hard:5px 5px 0 var(--rose)}
 .reels-sec h2{color:var(--marigold)}
 .hint{font-size:.9rem;opacity:.85;margin:.75rem 0 0}
-.reels{list-style:none;margin:1.5rem 0 0;padding:1rem var(--pad) 1.5rem;display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);scrollbar-color:var(--rose) transparent}
-.reel{flex:0 0 min(72vw,300px);scroll-snap-align:start;position:relative}
+.nav{display:flex;gap:.75rem;margin-top:1rem}
+.nav button{width:48px;height:48px;border-radius:50%;border:3px solid var(--petal);background:var(--marigold);color:var(--plum);font:800 1.5rem/1 var(--body);cursor:pointer}
+.reels{list-style:none;margin:1.5rem 0 0;padding:1rem var(--pad) 1.5rem;display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:var(--pad);scrollbar-color:var(--rose) transparent}
+.reel{flex:0 0 clamp(200px,72vw,300px);scroll-snap-align:start;position:relative}
 .phone{position:relative;aspect-ratio:9/16;border:6px solid var(--petal);border-radius:34px;overflow:hidden;background:#000;transition:transform .25s}
 .reel:hover .phone{transform:rotate(-1.5deg) translateY(-4px)}
 .phone::before{content:"";position:absolute;z-index:2;top:8px;left:50%;width:28%;height:7px;border-radius:9px;background:#000;transform:translateX(-50%);pointer-events:none}
@@ -83,9 +85,10 @@ h1 span{display:block}h1 span+span{margin-left:.55em}
 .facade:hover .play{transform:scale(1.12)}
 .cap{font-size:.88rem;line-height:1.4;margin:.75rem .25rem 0;overflow-wrap:anywhere}
 .start{position:absolute;top:-.8rem;left:-.4rem;z-index:3;margin:0;transform:rotate(-6deg);background:var(--marigold);color:var(--plum);box-shadow:3px 3px 0 var(--rose)}
-.more{background:var(--rose);color:#fff;border:3px solid var(--petal);border-radius:28px;padding:1.5rem;display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.more{flex:0 0 clamp(240px,72vw,300px);scroll-snap-align:end;background:var(--rose);color:#fff;border:3px solid var(--petal);border-radius:28px;padding:1.5rem;display:flex;flex-direction:column;justify-content:center;gap:1rem}
 .more h3{font-size:clamp(1.8rem,4vw,2.6rem)}.more p{margin:0}
-.more .btn{border-color:var(--petal)}
+.more .btn{border-color:var(--petal);font-size:.9rem;padding:.5rem .75rem}
+.more .grp{font-weight:800;margin-top:.4rem}
 /* gallery */
 .gal{background:var(--blush)}
 .gal a{font-weight:800}
@@ -143,6 +146,7 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 .track{width:auto}.track ul{flex-wrap:wrap;justify-content:center}.track ul[aria-hidden]{display:none}}
 /* larger screens */
 @media(min-width:720px){
+.nav{display:none}
 .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1180px;margin:1.5rem auto 0;overflow:visible}
 .feat{grid-column:span 2;grid-row:span 2}.feat .cap{font-size:1.05rem}
 .more{grid-column:span 2}
@@ -179,16 +183,16 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 </ul></div></div>
 
 <section id="reels" class="reels-sec" aria-labelledby="rh">
- <div class="wrap"><h2 id="rh">Reels &amp; videos</h2><p class="hint">Tap a phone to play. Swipe sideways on mobile for more.</p></div>
+ <div class="wrap"><h2 id="rh">Reels &amp; videos</h2><p class="hint">Tap a phone to play. Swipe or use the arrows for more.</p><div class="nav"><button type="button" aria-label="Previous videos">‹</button><button type="button" aria-label="Next videos">›</button></div></div>
  <ul class="reels" id="reel-list" role="list">
-  <li class="more"><h3>More on Instagram</h3><p>Follow both accounts for the full feed.</p><a class="btn w" href="https://instagram.com/kalaakritico">Kalaakriti</a><a class="btn w" href="https://instagram.com/anantworld_official">Anant World</a></li>
+  <li class="more"><h3>More on Instagram</h3><p class="grp">Personal</p><a class="btn" href="https://www.instagram.com/rogue.romantic_/">@rogue.romantic_</a><a class="btn w" href="https://instagram.com/kalaakritico">@kalaakritico</a><p class="grp">Work</p><a class="btn w" href="https://instagram.com/anantworld_official">@anantworld_official</a></li>
  </ul>
- <noscript><div class="wrap"><p>The videos need JavaScript. You can find them on Instagram instead: <a href="https://instagram.com/kalaakritico">Kalaakriti</a> and <a href="https://instagram.com/anantworld_official">Anant World</a>.</p></div></noscript>
+ <noscript><div class="wrap"><p>The videos need JavaScript. You can find them on Instagram instead: <a href="https://www.instagram.com/rogue.romantic_/">@rogue.romantic_</a>, <a href="https://instagram.com/kalaakritico">@kalaakritico</a> and <a href="https://instagram.com/anantworld_official">@anantworld_official</a>.</p></div></noscript>
 </section>
 
 <section id="gallery" class="gal" aria-labelledby="gh"><div class="wrap">
  <h2 id="gh">Product shots and styling</h2>
- <p class="lead">Tap any photo to open it. More on <a href="https://instagram.com/kalaakritico">@kalaakritico</a> and <a href="https://instagram.com/anantworld_official">@anantworld_official</a>.</p>
+ <p class="lead">Tap any photo to open it. More on <a href="https://www.instagram.com/rogue.romantic_/">@rogue.romantic_</a>, <a href="https://instagram.com/kalaakritico">@kalaakritico</a> and <a href="https://instagram.com/anantworld_official">@anantworld_official</a>.</p>
  <div class="grid">
   <button class="tile rv" type="button"><img src="images/swadha-tin-terracotta-burner.webp" width="960" height="1280" loading="lazy" alt="Swadha herbal blend tin by Anant World beside a terracotta lantern-style burner and an open clay bowl, with rose petals on gold silk"></button>
   <button class="tile rv" type="button"><img src="images/Ganesha.jpeg" width="960" height="1280" loading="lazy" alt="Two lotus-shaped terracotta diyas next to a cream vase with a Warli-style painted band, on gold silk"></button>
@@ -203,7 +207,7 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 <section id="experience" aria-labelledby="eh"><div class="wrap">
  <h2 id="eh">Where I've worked</h2>
  <ol class="tl">
-  <li class="rv"><article class="card"><span class="when">Apr 2026 – Sep 2026</span><h3>Marketing Executive</h3><p class="org">Anant World</p><ul>
+  <li class="rv"><article class="card"><span class="when">Apr 2026 – Present</span><h3>Marketing Executive</h3><p class="org">Anant World</p><ul>
    <li>Write Reel scripts, coordinate and direct shoots, and edit the final content</li>
    <li>Come up with Reel concepts that fit the brand's tone</li>
    <li>Guide styling, framing and lighting on product photography shoots</li>
@@ -243,7 +247,7 @@ dialog button{position:absolute;width:48px;height:48px;border-radius:50%;border:
 <footer id="contact" class="contact"><div class="wrap" style="padding-block:clamp(3.5rem,9vw,7rem)">
  <h2>Let's work together</h2>
  <a class="mail" href="mailto:pkaur6677@gmail.com">pkaur6677@gmail.com</a>
- <p class="cta"><a class="btn r" href="mailto:pkaur6677@gmail.com">Send an email</a><a class="btn" href="https://instagram.com/kalaakritico">Kalaakriti on Instagram</a><a class="btn" href="https://instagram.com/anantworld_official">Anant World on Instagram</a></p>
+ <p class="cta"><a class="btn r" href="mailto:pkaur6677@gmail.com">Send an email</a><a class="btn" href="https://www.instagram.com/rogue.romantic_/">@rogue.romantic_ (main)</a><a class="btn w" href="https://instagram.com/kalaakritico">@kalaakritico</a><a class="btn w" href="https://instagram.com/anantworld_official">@anantworld_official (work)</a></p>
  <p class="foot">© 2026 Preet Kaur. New Delhi, India.</p>
 </div></footer>
 
@@ -277,6 +281,9 @@ ul.addEventListener('click',e=>{const a=e.target.closest('.facade');if(!a)return
  f.title=a.getAttribute('aria-label').replace('Play video: ','');
  f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
  a.replaceWith(f);if(cur)cur.f.replaceWith(cur.a);cur={a,f};f.focus()});
+/* carousel arrows (mobile) */
+const rm=matchMedia('(prefers-reduced-motion:reduce)');
+document.querySelectorAll('.nav button').forEach((b,i)=>b.addEventListener('click',()=>ul.scrollBy({left:(i?1:-1)*ul.clientWidth*.8,behavior:rm.matches?'auto':'smooth'})));
 /* ticker: duplicate the row for a seamless loop */
 const tr=document.querySelector('.track'),c=tr.firstElementChild.cloneNode(true);c.setAttribute('aria-hidden','true');tr.append(c);
 /* lightbox */
